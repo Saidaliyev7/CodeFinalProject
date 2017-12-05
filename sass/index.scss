@@ -1,3 +1,37 @@
 $primarycolor:#99d038;
-
+body {
+    background-color: #f2f2f2;
+}
+.owl-next{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 7px 12px;
+    width: 40px;
+    height: 40px;
+    transition: 0.4s ease;
+    &:hover {
+        background-color: $primarycolor;
+        color: white;
+        transition: 0.4s ease;
+    }
+}
+.owl-prev{
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 7px 12px;
+    width: 40px;
+    height: 40px;
+    transition: 0.4s ease;
+    &:hover {
+        background-color: $primarycolor;
+        color: white;
+        transition: 0.4s ease;
+    }
+}
 @import 'header';
+@import 'category-slider';
+@import 'service';
+@import 'trending';

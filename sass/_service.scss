@@ -1,0 +1,48 @@
+.service {
+    padding: 100px 0px;
+    .service-box {
+        position: relative;
+        .box-image {
+            img {
+                width: 100%;
+            }
+        }
+        .box-content {
+            position: absolute;
+            top: 20%;
+            width: 100%;
+            padding-left: 40px;
+            .content-icon {
+                padding-right:10px; 
+                display: inline-block;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    i {
+                        font-size: 40px;
+                        display: inline-block;
+                    }
+                }
+            }
+            .content-text {
+             display: inline-block;
+                .text-top {
+                    a {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 24px;
+                    }
+                   
+                }
+                .text-body {
+                    h5 {
+                        font-size: 14px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
