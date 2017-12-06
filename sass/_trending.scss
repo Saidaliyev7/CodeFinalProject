@@ -20,7 +20,7 @@
             p {
                 margin-bottom: 0px;
                 font-size: 24px;
-                 color: black;
+                color: black;
             }
         }
         &::before {
@@ -31,6 +31,57 @@
             position: absolute;
             top: 0%;
             left: 0%;
+        }
+    }
+    .trending-bottom {
+        margin-top: 20px;
+        .bottom-content {
+            margin: 0px 10px;
+            background-color: white;
+            .content-text {
+                padding: 10px 50px;
+                .text-upper {
+                    margin-bottom: 20px;
+                    text-align: center;
+                    a {
+                        color: black;
+                        font-weight: bold;
+                        text-decoration: none;
+                        font-size: 18px;
+                    }
+                }
+                .text-stars {
+                    display: inline-block;
+                    ul {
+                        padding: 0px;
+                        list-style: none;
+                        li {
+                            font-size: 16px;
+                            display: inline-block;
+                            i {
+                                color: #ffb911;
+                            }
+                        }
+                        li:last-child {
+                            i {
+                                color: #c3c3c3;
+                            }
+                        }
+                    }
+                }
+                .text-date {
+                    display: inline-block;
+                    float: right;
+                    a {
+                        color: black;
+                        font-size: 16px;
+                        text-decoration: none;
+                        span {
+                            color: #ff1111;
+                        }
+                    }
+                }
+            }
         }
     }
 }
