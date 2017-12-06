@@ -7,6 +7,7 @@ body {
   border-radius: 50px;
   padding: 7px 12px;
   width: 40px;
+  color: #777777;
   height: 40px;
   transition: 0.4s ease; }
   .owl-next:hover {
@@ -17,6 +18,7 @@ body {
 .owl-prev {
   position: absolute;
   content: "";
+  color: #777777;
   background-color: #fff;
   border-radius: 50px;
   padding: 7px 12px;
@@ -315,17 +317,136 @@ body {
               font-size: 16px;
               display: inline-block; }
               .trending .trending-bottom .bottom-content .content-text .text-stars ul li i {
-                color: #ffb911; }
+                color: #ffb911;
+                transition: 0.4s ease; }
+                .trending .trending-bottom .bottom-content .content-text .text-stars ul li i:hover {
+                  color: #99d038;
+                  transition: 0.4s ease; }
             .trending .trending-bottom .bottom-content .content-text .text-stars ul li:last-child i {
-              color: #c3c3c3; }
+              color: #c3c3c3;
+              transition: 0.4s ease; }
+              .trending .trending-bottom .bottom-content .content-text .text-stars ul li:last-child i:hover {
+                color: #99d038;
+                transition: 0.4s ease; }
         .trending .trending-bottom .bottom-content .content-text .text-date {
           display: inline-block;
           float: right; }
-          .trending .trending-bottom .bottom-content .content-text .text-date a {
+          .trending .trending-bottom .bottom-content .content-text .text-date p {
             color: black;
             font-size: 16px;
             text-decoration: none; }
-            .trending .trending-bottom .bottom-content .content-text .text-date a span {
+            .trending .trending-bottom .bottom-content .content-text .text-date p span {
               color: #ff1111; }
+        .trending .trending-bottom .bottom-content .content-text .get-code-button {
+          margin: 20px 0px; }
+    .trending .trending-bottom .owl-nav {
+      display: block; }
+      .trending .trending-bottom .owl-nav .owl-next {
+        content: "";
+        top: -19%;
+        right: 250px;
+        background-color: #eeeeee; }
+        .trending .trending-bottom .owl-nav .owl-next:hover {
+          background-color: #99d038; }
+      .trending .trending-bottom .owl-nav .owl-prev {
+        content: "";
+        top: -19%;
+        right: 300px;
+        background-color: #eeeeee; }
+        .trending .trending-bottom .owl-nav .owl-prev:hover {
+          background-color: #99d038; }
+
+.coupons {
+  padding: 100px 0px;
+  width: 100%;
+  position: relative;
+  background-image: url(../img/background3.jpg); }
+  .coupons .trending-top {
+    text-align: right; }
+    .coupons .trending-top .top-content p {
+      text-transform: uppercase; }
+  .coupons .trending-bottom .content-text {
+    padding: 10px 35px !important;
+    border-top: 2px dashed black; }
+    .coupons .trending-bottom .content-text .text-upper {
+      text-align: left !important; }
+      .coupons .trending-bottom .content-text .text-upper a {
+        transition: 0.4s ease; }
+        .coupons .trending-bottom .content-text .text-upper a:hover {
+          transition: 0.4s ease;
+          color: #99d038; }
+    .coupons .trending-bottom .content-text .text-store p {
+      font-size: 19px; }
+      .coupons .trending-bottom .content-text .text-store p span {
+        opacity: 0.8;
+        font-size: 16px; }
+    .coupons .trending-bottom .content-text .text-date {
+      float: left !important;
+      margin-bottom: 30px; }
+      .coupons .trending-bottom .content-text .text-date p {
+        font-size: 19px !important; }
+        .coupons .trending-bottom .content-text .text-date p span {
+          font-size: 16px; }
+  .coupons .trending-bottom .owl-nav {
+    display: block; }
+    .coupons .trending-bottom .owl-nav .owl-next {
+      top: -16%;
+      left: 300px; }
+    .coupons .trending-bottom .owl-nav .owl-prev {
+      top: -16%;
+      left: 250px; }
+
+.latest-blog {
+  background-image: none; }
+  .latest-blog .trending-bottom .content-text {
+    padding: 10px 15px !important; }
+    .latest-blog .trending-bottom .content-text .text-upper {
+      text-align: left !important; }
+      .latest-blog .trending-bottom .content-text .text-upper a {
+        transition: 0.4s ease; }
+        .latest-blog .trending-bottom .content-text .text-upper a:hover {
+          transition: 0.4s ease;
+          color: #99d038;
+          opacity: 1; }
+    .latest-blog .trending-bottom .content-text .text-font ul {
+      padding-left: 2px;
+      list-style: none; }
+      .latest-blog .trending-bottom .content-text .text-font ul li {
+        padding-right: 10px;
+        display: inline-block; }
+        .latest-blog .trending-bottom .content-text .text-font ul li a {
+          text-decoration: none;
+          font-size: 13px;
+          color: black;
+          opacity: 0.8;
+          transition: 0.4s ease; }
+          .latest-blog .trending-bottom .content-text .text-font ul li a .font-icon {
+            display: inline-block; }
+          .latest-blog .trending-bottom .content-text .text-font ul li a .font-text {
+            display: inline-block; }
+          .latest-blog .trending-bottom .content-text .text-font ul li a:hover {
+            transition: 0.4s ease;
+            color: #99d038; }
+    .latest-blog .trending-bottom .content-text .text-paragraph p {
+      color: black;
+      opacity: 0.8; }
+    .latest-blog .trending-bottom .content-text .read-more {
+      margin-bottom: 20px; }
+      .latest-blog .trending-bottom .content-text .read-more a {
+        color: black;
+        opacity: 0.8;
+        transition: 0.4s ease;
+        text-decoration: none; }
+        .latest-blog .trending-bottom .content-text .read-more a:hover {
+          transition: 0.4s ease;
+          color: #99d038; }
+  .latest-blog .trending-bottom .owl-nav {
+    display: block; }
+    .latest-blog .trending-bottom .owl-nav .owl-next {
+      top: -16%;
+      right: 70px; }
+    .latest-blog .trending-bottom .owl-nav .owl-prev {
+      top: -16%;
+      right: 120px; }
 
 /*# sourceMappingURL=index.css.map */

@@ -8,6 +8,7 @@ body {
     border-radius: 50px;
     padding: 7px 12px;
     width: 40px;
+    color: #777777;
     height: 40px;
     transition: 0.4s ease;
     &:hover {
@@ -19,6 +20,7 @@ body {
 .owl-prev{
     position: absolute;
     content: "";
+    color: #777777;
     background-color: #fff;
     border-radius: 50px;
     padding: 7px 12px;
@@ -101,3 +103,5 @@ body {
 @import 'category-slider';
 @import 'service';
 @import 'trending';
+@import 'coupons';
+@import 'latest-blog';
