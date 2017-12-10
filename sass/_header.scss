@@ -16,6 +16,7 @@
                         color: white;
                         &:focus {
                             border-color: $primarycolor !important;
+                            outline: none;
                         }
                     }
                     display: inline-block;

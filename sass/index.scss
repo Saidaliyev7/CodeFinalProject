@@ -99,7 +99,13 @@ body {
    
 }
 
+@media screen and (max-width:991px) {
 
+.owl-nav {
+    display: none !important;
+}
+
+}
 
 
 @import 'header';
