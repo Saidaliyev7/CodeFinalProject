@@ -1,0 +1,88 @@
+.footer {
+    background-color: black;
+    .footer-top {
+        margin-bottom: 50px;
+        padding: 20px 40px;
+        background-color: $primarycolor;
+        .top-name {
+            display: inline-block;
+            p {
+                color: white;
+                font-size: 14px;
+                span {
+                    font-size: 24px;
+                    display: block;
+                }
+            }
+        }
+        .top-input {
+            text-align: center;
+            width: 50%;
+            display: inline-block;
+            position: relative;
+            input {
+                color: white;
+                background-color: transparent;
+                border: 1px solid white;
+                padding: 7px 30px;
+                border-radius: 20px;
+                width: 70%;
+                &:focus {
+                    outline: none;
+                }
+                &::placeholder {
+                    color: white;
+                }
+            }
+            a {
+                color: $primarycolor;
+                padding: 8px 30px;
+                border-bottom-right-radius: 20px;
+                border-top-right-radius: 20px;
+                border-right: 1px solid white;
+                position: absolute;
+                right: 0px;
+                background-color: white;
+            }
+        }
+        .top-links {
+            display: inline-block;
+            ul {
+                list-style: none; 
+                li {
+                    display: inline-block;
+                    padding-right: 10px;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        transition: 0.4s ease;
+                        i {
+                            font-size: 16px;
+                        }
+                        &:hover {
+                            transition: 0.4s ease;
+                            color: $primarycolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .top-input {
+        width: 100% !important;
+        input {
+            width: 95% !important;
+        }
+    }
+}
+
+@media screen and (max-width:416px) {
+    .top-input {
+        a {
+            display: none !important;
+        }
+    }
+}

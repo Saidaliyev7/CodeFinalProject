@@ -104,9 +104,7 @@
                     }
                 }
             }
-            .nav-link {
-                
-            }
+
             .menu-icons {
                 display: inline-block;
                 float: right;
@@ -131,5 +129,20 @@
                 }
             }
         }
+    }
+}
+@media screen and (max-width:991px) {
+    .menu-navbar {
+        display: none !important;
+    }
+    .menu-icons {
+        display: none !important;
+    }
+    .nav-link {
+//display: inline-block !important; 
+    }
+    .navbar {
+        float: right;
+        display: inline-block;
     }
 }

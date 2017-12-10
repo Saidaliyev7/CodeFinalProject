@@ -185,6 +185,16 @@ body {
                 transition: 0.4s ease;
                 color: black; }
 
+@media screen and (max-width: 991px) {
+  .menu-navbar {
+    display: none !important; }
+
+  .menu-icons {
+    display: none !important; }
+
+  .navbar {
+    float: right;
+    display: inline-block; } }
 .category {
   padding: 50px 0px;
   position: relative;
@@ -489,5 +499,70 @@ body {
     .latest-blog .trending-bottom .owl-nav .owl-prev {
       top: -16%;
       right: 120px; }
+
+.footer {
+  background-color: black; }
+  .footer .footer-top {
+    margin-bottom: 50px;
+    padding: 20px 40px;
+    background-color: #99d038; }
+    .footer .footer-top .top-name {
+      display: inline-block; }
+      .footer .footer-top .top-name p {
+        color: white;
+        font-size: 14px; }
+        .footer .footer-top .top-name p span {
+          font-size: 24px;
+          display: block; }
+    .footer .footer-top .top-input {
+      text-align: center;
+      width: 50%;
+      display: inline-block;
+      position: relative; }
+      .footer .footer-top .top-input input {
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        padding: 7px 30px;
+        border-radius: 20px;
+        width: 70%; }
+        .footer .footer-top .top-input input:focus {
+          outline: none; }
+        .footer .footer-top .top-input input::placeholder {
+          color: white; }
+      .footer .footer-top .top-input a {
+        color: #99d038;
+        padding: 8px 30px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        border-right: 1px solid white;
+        position: absolute;
+        right: 0px;
+        background-color: white; }
+    .footer .footer-top .top-links {
+      display: inline-block; }
+      .footer .footer-top .top-links ul {
+        list-style: none; }
+        .footer .footer-top .top-links ul li {
+          display: inline-block;
+          padding-right: 10px; }
+          .footer .footer-top .top-links ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.4s ease; }
+            .footer .footer-top .top-links ul li a i {
+              font-size: 16px; }
+            .footer .footer-top .top-links ul li a:hover {
+              transition: 0.4s ease;
+              color: #99d038; }
+
+@media screen and (max-width: 991px) {
+  .top-input {
+    width: 100% !important; }
+    .top-input input {
+      width: 95% !important; } }
+@media screen and (max-width: 416px) {
+  .top-input a {
+    display: none !important; } }
 
 /*# sourceMappingURL=index.css.map */

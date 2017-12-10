@@ -51,13 +51,13 @@ $(document).ready(function () {
         }
     });
   
-    if($(document).width()<900)
-    {
-     $(".menu-navbar").toggleClass("navbar-display-none")
-     $(".navbar").toggleClass("navbar-display-block")
-     $( ".owl-prev").toggleClass("navbar-display-none")
-     $( ".owl-next").toggleClass("navbar-display-none")
- }
+//     if($(document).width()<900)
+//     {
+//      $(".menu-navbar").toggleClass("navbar-display-none")
+//      $(".navbar").toggleClass("navbar-display-block")
+//      $( ".owl-prev").toggleClass("navbar-display-none")
+//      $( ".owl-next").toggleClass("navbar-display-none")
+//  }
  
 
     
