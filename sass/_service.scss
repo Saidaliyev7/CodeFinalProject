@@ -2,16 +2,19 @@
     padding: 100px 0px;
     .service-box {
         position: relative;
-        .box-image {
+        width: 100%;
+        height: 100%;
             img {
+                position: absolute;
+                top: 0%;
+z-index: -5;
                 width: 100%;
+                height: 100%;
+                
             }
-        }
+        
         .box-content {
-            position: absolute;
-            top: 20%;
-            width: 100%;
-            padding-left: 40px;
+    padding: 50px;
             .content-icon {
                 padding-right:10px; 
                 display: inline-block;

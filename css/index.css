@@ -1,6 +1,9 @@
 body {
   background-color: #f2f2f2; }
 
+.navbar {
+  display: none; }
+
 .owl-next {
   position: absolute;
   background-color: #fff;
@@ -235,14 +238,17 @@ body {
 .service {
   padding: 100px 0px; }
   .service .service-box {
-    position: relative; }
-    .service .service-box .box-image img {
-      width: 100%; }
-    .service .service-box .box-content {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .service .service-box img {
       position: absolute;
-      top: 20%;
+      top: 0%;
+      z-index: -5;
       width: 100%;
-      padding-left: 40px; }
+      height: 100%; }
+    .service .service-box .box-content {
+      padding: 50px; }
       .service .service-box .box-content .content-icon {
         padding-right: 10px;
         display: inline-block; }
@@ -356,6 +362,9 @@ body {
         .trending .trending-bottom .owl-nav .owl-prev:hover {
           background-color: #99d038; }
 
+@media screen and (max-width: 900px) {
+  .top-content p {
+    font-size: 16px !important; } }
 .coupons {
   padding: 100px 0px;
   width: 100%;
@@ -367,7 +376,39 @@ body {
       text-transform: uppercase; }
   .coupons .trending-bottom .content-text {
     padding: 10px 35px !important;
-    border-top: 2px dashed black; }
+    border-top: 2px dashed black;
+    position: relative; }
+    .coupons .trending-bottom .content-text .text-scissors {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      top: -16px;
+      left: 43%;
+      transition: 0.4s ease; }
+      .coupons .trending-bottom .content-text .text-scissors:hover {
+        transition: 0.4s ease; }
+        .coupons .trending-bottom .content-text .text-scissors:hover::after {
+          transition: 0.4s ease;
+          transform: rotateZ(35deg); }
+        .coupons .trending-bottom .content-text .text-scissors:hover::before {
+          transition: 0.4s ease;
+          transform: rotateZ(-35deg); }
+      .coupons .trending-bottom .content-text .text-scissors::after {
+        transition: 0.4s ease;
+        content: "";
+        background-image: url(../img/scissors2.png);
+        position: absolute;
+        width: 100%;
+        height: 43%;
+        top: 0%; }
+      .coupons .trending-bottom .content-text .text-scissors::before {
+        transition: 0.4s ease;
+        content: "";
+        background-image: url(../img/scissors.png);
+        position: absolute;
+        width: 100%;
+        height: 43%;
+        top: 44%; }
     .coupons .trending-bottom .content-text .text-upper {
       text-align: left !important; }
       .coupons .trending-bottom .content-text .text-upper a {
