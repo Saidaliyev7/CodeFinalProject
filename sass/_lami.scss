@@ -64,7 +64,7 @@
     }
     
     .slider{
-        margin-top: 11.5%;
+        margin-bottom:100px; 
         .owl-carousel{
             
                
@@ -139,7 +139,7 @@
             text-align: center;
             color: #000;
             border: 1px solid #f2f2f2;
-            padding: 5px 40px;
+            padding: 1px 40px;
             position: relative;
             z-index: 1;
             span {
@@ -291,10 +291,10 @@
     
     }
     .our-partners{
-         padding: 100px 0px;
+         padding-bottom: 100px ;
         width: 100%;
         position: relative;
-        background-image: url(../img/background2.jpg);
+      
         .trending-top {
             position: relative;
             padding: 20px 0px;
@@ -394,17 +394,16 @@
                 display: block;
                 .owl-next {
                     content: "";
-                    top: -55%;
-                    right: 160px;
-                    background-color: #eeeeee!important;
+                    top: -48%;
+                    right: 215px;
+                    background-color: #eeeeee !important;
                     &:hover {
                         background-color: $primarycolor;
                     }
                 }
                 .owl-prev {
-                    content: "";
-                    top: -55%;
-                    right: 205px;
+                    top: -48%;
+                    right: 260px;
                     background-color: #eeeeee !important;
                     &:hover {
                         background-color: $primarycolor;

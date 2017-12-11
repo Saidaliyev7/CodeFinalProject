@@ -48,7 +48,7 @@ body {
   text-align: center;
   color: #000;
   border: 1px solid #f2f2f2;
-  padding: 5px 40px;
+  padding: 1px 40px;
   position: relative;
   z-index: 1; }
   .get-code-button a span {
@@ -135,7 +135,7 @@ body {
   height: 40px;
   font-size: 13px; }
 .lami-sections .slider {
-  margin-top: 11.5%; }
+  margin-bottom: 100px; }
   .lami-sections .slider .owl-carousel img {
     display: block;
     width: 100%; }
@@ -183,7 +183,7 @@ body {
   text-align: center;
   color: #000;
   border: 1px solid #f2f2f2;
-  padding: 5px 40px;
+  padding: 1px 40px;
   position: relative;
   z-index: 1; }
   .lami-sections .get-code-button a span {
@@ -277,10 +277,9 @@ body {
   .lami-sections .section-box .box-a .text h4 {
     font-size: 14px; }
 .lami-sections .our-partners {
-  padding: 100px 0px;
+  padding-bottom: 100px;
   width: 100%;
-  position: relative;
-  background-image: url(../img/background2.jpg); }
+  position: relative; }
   .lami-sections .our-partners .trending-top {
     position: relative;
     padding: 20px 0px;
@@ -355,15 +354,14 @@ body {
       display: block; }
       .lami-sections .our-partners .trending-bottom .owl-nav .owl-next {
         content: "";
-        top: -55%;
-        right: 160px;
+        top: -48%;
+        right: 215px;
         background-color: #eeeeee !important; }
         .lami-sections .our-partners .trending-bottom .owl-nav .owl-next:hover {
           background-color: #99d038; }
       .lami-sections .our-partners .trending-bottom .owl-nav .owl-prev {
-        content: "";
-        top: -55%;
-        right: 205px;
+        top: -48%;
+        right: 260px;
         background-color: #eeeeee !important; }
         .lami-sections .our-partners .trending-bottom .owl-nav .owl-prev:hover {
           background-color: #99d038; }
@@ -908,7 +906,7 @@ body {
       right: 120px; }
 
 .footer {
-  background-color: black; }
+  background-color: #262626; }
   .footer .footer-top {
     margin-bottom: 50px;
     padding: 20px 40px;
