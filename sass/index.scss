@@ -1,6 +1,9 @@
 $primarycolor:#99d038;
 body {
-    background-color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: #f2f2f2 !important;
+    line-height: 1.8em;
 }
 .navbar {
     display: none;
@@ -107,7 +110,7 @@ body {
 
 }
 
-
+@import 'lami';
 @import 'header';
 @import 'category-slider';
 @import 'service';

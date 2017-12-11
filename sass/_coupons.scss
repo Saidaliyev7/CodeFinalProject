@@ -19,45 +19,44 @@
             position: relative;
             .text-scissors {
                 position: absolute;
-                width: 32px;
+                display: block;
+                z-index: 54;
                 height: 32px;
+                width: 100%;
                 top: -16px;
-                left: 43%;
-                transition: 0.4s ease;
+                left: 0%;
                 &:hover {
                        
                     transition: 0.4s ease;
-                    &::after {
+                    .img1 img {
                         transition: 0.4s ease;
-                      
-                      transform: rotateZ(35deg);
+                        left: 70%;
+                      transform: rotateZ(9deg);
                       
                     }
-                    &::before {
-                      
+                    .img2 img {
+                      left: 70%;
                         transition: 0.4s ease;
-                        transform: rotateZ(-35deg);
+                        transform: rotateZ(-9deg);
                     }
                 }
-                &::after {
+                .img1 img {
                     transition: 0.4s ease;
                     content: "";
-                    background-image: url(../img/scissors2.png);
                     position: absolute;
-                    width: 100%;
+                    width: 60px;
                     height: 43%;
-                    top: 0%;
-
+                    top: 27%;
+                    left: 40%;
                 }
-                &::before {
+                .img2 img {
                     transition: 0.4s ease;
                     content: "";
-                    background-image: url(../img/scissors.png);
                     position: absolute;
-                    width: 100%;
+                    width: 60px;
                     height: 43%;
-                    top: 44%;
-                    
+                    top: 25%;
+                    left: 40%;
                 }
             }
             .text-upper{
