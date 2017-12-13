@@ -1,0 +1,169 @@
+.footer {
+    background-color: #262626;
+    .footer-top {
+        margin-bottom: 50px;
+        padding: 20px 40px;
+        background-color: $primarycolor;
+        .top-name {
+            display: inline-block;
+            p {
+                color: white;
+                font-size: 14px;
+                span {
+                    font-size: 24px;
+                    display: block;
+                }
+            }
+        }
+        .top-input {
+            text-align: center;
+            width: 50%;
+            display: inline-block;
+            position: relative;
+            input {
+                color: white;
+                background-color: transparent;
+                border: 1px solid white;
+                padding: 7px 30px;
+                border-radius: 20px;
+                width: 70%;
+                &:focus {
+                    outline: none;
+                }
+                &::placeholder {
+                    color: white;
+                }
+            }
+            a {
+                color: $primarycolor;
+                padding: 8px 30px;
+                border-bottom-right-radius: 20px;
+                border-top-right-radius: 20px;
+                border-right: 1px solid white;
+                position: absolute;
+                right: 0px;
+                text-decoration: none;
+                background-color: white;
+            }
+        }
+        .top-links {
+            display: inline-block;
+            ul {
+                list-style: none; 
+                li {
+                    display: inline-block;
+                    padding-right: 10px;
+                    a {
+
+                        color: white;
+                        text-decoration: none;
+                        transition: 0.4s ease;
+                        i {
+                            opacity: 0.8;
+                            font-size: 16px;
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        a{
+            text-decoration: none!important;
+        }
+        display: inline-block;
+        p{
+            line-height: 2.5em;
+            margin: 25px 73px 30px 0;
+            font-size: 15px;
+            text-transform: capitalize;
+            margin-bottom: 25px;
+            color: #b7b7b7;
+            a{
+                color: #b7b7b7;
+                
+            }
+            img{
+                width: 100%;
+            }
+        }
+        h4{
+            color: #fff;
+            margin-bottom: 30px;
+            position: relative;
+            margin: 0px;
+            background: none;
+            line-height: 1.6em;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+        
+
+        .footer-logo{
+            a{
+            }
+             
+        }
+     }
+}
+
+@media screen and (max-width:991px) {
+    .top-input {
+        width: 100% !important;
+        input {
+            width: 95% !important;
+        }
+    }
+}
+
+@media screen and (max-width:416px) {
+    .top-input {
+        a {
+            display: none !important;
+        }
+    }
+}
+@media screen and (max-width: 991px){
+    .footer{
+        .footer-bottom{
+            h4{
+                font-size: 13px;
+            }
+            
+        }
+        .footer-top{
+            span{
+                font-size: 16px !important;
+            }
+        }
+    }
+    
+  }
+@media screen and (max-width: 767px){
+ 
+    .footer{
+        .footer-bottom{
+            h4{
+                font-size: 13px;
+            }
+        }
+        .footer-top{
+            .top-links {
+                display: block !important;
+                ul{
+                    display: block;
+                    padding-left: 0px;
+                    margin-top: 10px;
+                }
+                
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    
+    
+}

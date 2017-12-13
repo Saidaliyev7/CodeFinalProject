@@ -1,0 +1,7 @@
+.navbar-display-block {
+    display: block !important;
+    text-align: center;
+}
+.navbar-display-none {
+    display: none !important;
+}
