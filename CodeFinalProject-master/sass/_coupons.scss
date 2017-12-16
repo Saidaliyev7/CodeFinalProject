@@ -1,0 +1,105 @@
+.coupons {
+    padding: 100px 0px;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/background3.jpg);
+    .trending-top {
+        text-align: right;
+        .top-content {
+            p {
+                text-transform: uppercase;
+            }
+        }
+    }
+    .trending-bottom {
+        
+        .content-text {
+            padding: 10px 35px !important;
+            border-top:2px dashed black;
+            position: relative;
+            .text-scissors {
+                position: absolute;
+                display: block;
+                z-index: 54;
+                height: 32px;
+                width: 100%;
+                top: -16px;
+                left: 0%;
+                &:hover {
+                       
+                    transition: 0.4s ease;
+                    .img1 img {
+                        transition: 0.4s ease;
+                        left: 70%;
+                      transform: rotateZ(9deg);
+                      
+                    }
+                    .img2 img {
+                      left: 70%;
+                        transition: 0.4s ease;
+                        transform: rotateZ(-9deg);
+                    }
+                }
+                .img1 img {
+                    transition: 0.4s ease;
+                    content: "";
+                    position: absolute;
+                    width: 60px;
+                    height: 43%;
+                    top: 27%;
+                    left: 40%;
+                }
+                .img2 img {
+                    transition: 0.4s ease;
+                    content: "";
+                    position: absolute;
+                    width: 60px;
+                    height: 43%;
+                    top: 25%;
+                    left: 40%;
+                }
+            }
+            .text-upper{
+                text-align: left !important;
+                a { 
+                    transition: 0.4s ease;
+                    &:hover{
+                        transition: 0.4s ease;
+                        color: $primarycolor;
+                    }
+                }
+                
+            }
+            .text-store {
+                p {
+                    font-size: 19px ;
+                    span {
+                        opacity: 0.8;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .text-date {
+                float: left !important;
+                margin-bottom: 30px;
+                p {
+                    font-size: 19px !important;
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .owl-nav {
+            display: block;
+            .owl-next {
+                top: -16%;
+                left: 300px;
+            }
+            .owl-prev {
+                top: -16%;
+                left: 250px;
+            }
+        }
+    }
+}

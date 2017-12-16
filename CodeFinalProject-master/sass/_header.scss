@@ -1,0 +1,150 @@
+.header {
+    .header-top {
+        padding: 10px 0px;
+        background-color: $primarycolor;
+        .top-selects {
+            position: relative;
+            display: inline-block;
+            ul {
+                padding: 0px;
+                margin: 0px !important;
+                list-style: none;
+                li {
+                    select {
+                        background-color: $primarycolor;
+                        border-color: $primarycolor;
+                        color: white;
+                        &:focus {
+                            border-color: $primarycolor !important;
+                            outline: none;
+                        }
+                    }
+                    display: inline-block;
+                }
+                li:first-child {
+                    margin-right: 10px;
+                }
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 20px;
+                background-color: white;
+                left: 108px;
+                top: 16%;
+            }
+        }
+        .top-user {
+            display: inline-block;
+            float: right;
+            position: relative;
+            ul {
+                margin: 0px;
+                list-style: none;
+                li {
+                    display: inline-block;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        .user-icon {
+                            display: inline-block;
+                            i {
+                                display: inline-block;
+                            }
+                        }
+                        .user-name {
+                            display: inline-block;
+                        }
+                    }
+                }
+                li:first-child {
+                    margin-right: 20px;
+                }
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 2px;
+                height: 20px;
+                background-color: white;
+                left: 106px;
+                top: 10%;
+            }
+        }
+    }
+    .header-bottom {
+        background-color: white;
+        .bottom-menu {
+            padding: 20px 0px;
+            .menu-icon {
+                display: inline-block;
+            }
+            .menu-navbar {
+                float: right;
+                display: inline-block;
+                ul {
+                    padding: 0px;
+                    margin: 0px;
+                    list-style: none;
+                    li {
+                        display: inline-block;
+                        padding: 0px 15px;
+                        a {
+                            font-weight: bold;
+                            font-size: 16px;
+                            color: black;
+                            text-decoration: none;
+                            opacity: 0.8;
+                            transition: 0.4s ease;
+                            &:hover {
+                                transition: 0.4s ease;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .menu-icons {
+                display: inline-block;
+                float: right;
+                ul {
+                    list-style: none;
+                    li {
+                        padding-left: 5px;
+                        display: inline-block;
+                        a {
+                            text-decoration: none;
+                            i {
+                                color: #636160;
+                               
+                                transition: 0.4s ease;
+                                &:hover {
+                                    transition: 0.4s ease;
+                                  color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:991px) {
+    .menu-navbar {
+        display: none !important;
+    }
+    .menu-icons {
+        display: none !important;
+    }
+    .nav-link {
+//display: inline-block !important; 
+    }
+    .navbar {
+        float: right;
+        display: inline-block;
+    }
+    
+}
