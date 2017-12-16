@@ -5,6 +5,11 @@ body {
     background-color: #f2f2f2 !important;
     line-height: 1.8em;
 }
+.google-map {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+}
 .navbar {
     display: none;
 }
@@ -101,6 +106,43 @@ body {
     }
    
 }
+.checkout {
+    float: right;
+    margin-top: 50px;
+    a {
+        text-transform: uppercase;
+        border-radius: 50px;
+        padding: 10px 40px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: $primarycolor;
+    }
+}
+// .lami-sections {
+//     .slider {
+//         .neyseye {
+//             position: relative;
+//             &::before {
+//             content: "";
+//              position: absolute;
+//              width: 100%;
+//              height: 100%;
+//              background-color: black;
+//              opacity: 1;
+             
+//             }
+//         }
+//     }
+// }
+// .nem {
+//     position: relative;
+//     &::before{
+// content: "";
+// width: 0px !important;
+// height: 0px !important;
+//     }
+// }
 
 @media screen and (max-width:991px) {
 
@@ -118,3 +160,7 @@ body {
 @import 'coupons';
 @import 'latest-blog';
 @import 'footer';
+@import 'contact';
+@import 'category';
+@import 'shopcart';
+@import 'wishlist';
