@@ -131,13 +131,7 @@ $(document).ready(function () {
     $(".owl-next").html('<i class="fa fa-arrow-right"></i>');
 
 
-    //sliderin ortasinin opacitisiz olmasini elemek isteyende men :D 
-   
-    //     $(".lami-sections .owl-carousel .center .neyseye").addClass("nem");
-    
-    // if($(".lami-sections .owl-carousel .center").find(".nem")==true)
-    // {
-    //     $(".lami-sections .owl-carousel .center .neyseye").removeClass("nem")
-    // }
+
+  
     
 });

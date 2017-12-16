@@ -5,15 +5,18 @@ body {
     background-color: #f2f2f2 !important;
     line-height: 1.8em;
 }
+
 .google-map {
     margin-top: 50px;
     width: 100%;
     height: 400px;
 }
+
 .navbar {
     display: none;
 }
-.owl-next{
+
+.owl-next {
     position: absolute;
     background-color: #fff;
     border-radius: 50px;
@@ -28,7 +31,8 @@ body {
         transition: 0.4s ease;
     }
 }
-.owl-prev{
+
+.owl-prev {
     position: absolute;
     content: "";
     color: #777777;
@@ -44,6 +48,7 @@ body {
         transition: 0.4s ease;
     }
 }
+
 .get-code-button {
     a {
         text-decoration: none;
@@ -95,17 +100,17 @@ body {
         }
         &:hover {
             span {
-               transform: translateX(-64px) ;
+                transform: translateX(-64px);
                 color: white;
                 background-color: $primarycolor;
-              &::after {
-                border-bottom: 32px solid $primarycolor;
-              }
+                &::after {
+                    border-bottom: 32px solid $primarycolor;
+                }
             }
         }
     }
-   
 }
+
 .checkout {
     float: right;
     margin-top: 50px;
@@ -119,37 +124,79 @@ body {
         background-color: $primarycolor;
     }
 }
-// .lami-sections {
-//     .slider {
-//         .neyseye {
-//             position: relative;
-//             &::before {
-//             content: "";
-//              position: absolute;
-//              width: 100%;
-//              height: 100%;
-//              background-color: black;
-//              opacity: 1;
-             
-//             }
-//         }
-//     }
-// }
-// .nem {
-//     position: relative;
-//     &::before{
-// content: "";
-// width: 0px !important;
-// height: 0px !important;
-//     }
-// }
 
-@media screen and (max-width:991px) {
 
-.owl-nav {
-    display: none !important;
+.lami-sections {
+    .slider {
+        .center {
+            .slider-carousel {
+                .slider-carousel-overlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    opacity: 0;
+                    z-index: 0;
+                }
+                .text {
+                    display: block;
+                }
+            }
+        }
+        .owl-nav {
+            display: block !important;
+            .owl-next{
+                content: "";
+                top: 40%;
+                right: 10%;
+            }
+        .owl-prev{
+                content: "";
+                top: 40%;
+                left: 10%;
+           
+            }
+        }
+        .owl-next {
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50px;
+            padding: 7px 12px;
+            width: 40px;
+            color: #777777;
+            height: 40px;
+            transition: 0.4s ease;
+            &:hover {
+                background-color: $primarycolor;
+                color: white;
+                transition: 0.4s ease;
+            }
+        }
+        
+        .owl-prev {
+            position: absolute;
+            content: "";
+            color: #777777;
+            background-color: #fff;
+            border-radius: 50px;
+            padding: 7px 12px;
+            width: 40px;
+            height: 40px;
+            transition: 0.4s ease;
+            &:hover {
+                background-color: $primarycolor;
+                color: white;
+                transition: 0.4s ease;
+            }
+        }
+        
+    }
 }
 
+@media screen and (max-width:991px) {
+    .owl-nav {
+        display: none !important;
+    }
 }
 
 @import 'lami';
