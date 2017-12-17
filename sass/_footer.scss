@@ -127,6 +127,15 @@
 }
 @media screen and (max-width: 991px){
     .footer{
+        .footer-top {
+            text-align: center;
+            .top-links {
+                ul {
+                    padding-left: 0px;
+                    margin-top: 19px;
+                }
+            }
+        }
         .footer-bottom{
             h4{
                 font-size: 13px;

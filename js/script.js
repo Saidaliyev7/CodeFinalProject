@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    
-    
+
+
     $(".category .owl-carousel").owlCarousel({
         loop: true,
         nav: true,
@@ -61,7 +61,7 @@ $(document).ready(function () {
     //      $( ".owl-next").toggleClass("navbar-display-none")
     //  }
 
-      
+
 
     $('.our-partners .owl-carousel').owlCarousel({
         center: true,
@@ -109,17 +109,12 @@ $(document).ready(function () {
         if ($(".product-count input").val() > 0) {
             a = a - 1;
             $(".product-count input").val(a);
-
         }
-
-
-
     })
 
-
-
     $(".product-count .plus").click(function () {
-        console.log($(".product-count input").val())
+        ////console.log($(".product-count .plus"))
+        ////console.log($(".product-count input").val())
 
         a = a + 1;
         $(".product-count input").val(a);
@@ -129,9 +124,4 @@ $(document).ready(function () {
 
     $(".owl-prev").html('<i class="fa fa-arrow-left"></i>');
     $(".owl-next").html('<i class="fa fa-arrow-right"></i>');
-
-
-
-  
-    
 });
