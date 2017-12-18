@@ -95,6 +95,8 @@ $('.slider .owl-carousel').owlCarousel({
             items:2
         }
     }
+
+    
 });
 
  
@@ -103,5 +105,45 @@ $('.slider .owl-carousel').owlCarousel({
 
     $( ".owl-prev").html('<i class="fa fa-arrow-left"></i>');
     $( ".owl-next").html('<i class="fa fa-arrow-right"></i>');
+
+
+
+$('.slider-deals .owl-carousel').owlCarousel({
+    center: true,
+    // autoplay:true,
+    autoplayTimeout:4000,
+    items:1,
+    loop:true,
+    dots:false,
+    margin:10,
+});
+
+ 
+
+    
+
+    $( ".owl-prev").html('<i class="fa fa-arrow-left"></i>');
+    $( ".owl-next").html('<i class="fa fa-arrow-right"></i>');
+
+
+
+
+$('.slider-blog .owl-carousel').owlCarousel({
+    center: true,
+    // autoplay:true,
+    autoplayTimeout:4000,
+    items:1,
+    loop:true,
+    dots:false,
+    margin:10,
+});
+
+ 
+
+    
+
+    $( ".owl-prev").html('<i class="fa fa-arrow-left"></i>');
+    $( ".owl-next").html('<i class="fa fa-arrow-right"></i>');
+
 
 });
