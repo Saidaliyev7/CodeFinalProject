@@ -108,16 +108,18 @@ $(document).ready(function () {
 
         if ($(".product-count input").val() > 0) {
             a = a - 1;
-            $(".product-count input").val(a);
+            $(this).closest(".product-count ").find("input").val(a);
         }
     })
 
     $(".product-count .plus").click(function () {
         ////console.log($(".product-count .plus"))
         ////console.log($(".product-count input").val())
-
+        
         a = a + 1;
-        $(".product-count input").val(a);
+        //$(this).siblings('input')
+        $(this).closest(".product-count ").find("input").val(a);
+       //$(".product-count input").val(a);
     })
 
 
