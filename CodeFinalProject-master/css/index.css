@@ -131,11 +131,29 @@ a {
 .margin-b-30 {
   margin-bottom: 30px; }
 
+.margin-t-30 {
+  margin-top: 30px; }
+
 .margin-b-20 {
   margin-bottom: 20px; }
 
+.margin-t-20 {
+  margin-top: 20px; }
+
+.margin-t-10 {
+  margin-top: 10px; }
+
 .margin-b-70 {
   margin-bottom: 70px; }
+
+.margin-b-10 {
+  margin-bottom: 10px; }
+
+.margin-b-5 {
+  margin-bottom: 5px; }
+
+.margin-l-10 {
+  margin-left: 10px; }
 
 input[type=text] {
   padding: 0 20px;
@@ -578,7 +596,8 @@ input[type=text] {
       display: inline-block; }
     .header .header-bottom .bottom-menu .menu-navbar {
       float: right;
-      display: inline-block; }
+      display: inline-block;
+      margin-top: 7px; }
       .header .header-bottom .bottom-menu .menu-navbar ul {
         padding: 0px;
         margin: 0px;
@@ -598,7 +617,8 @@ input[type=text] {
               opacity: 1; }
     .header .header-bottom .bottom-menu .menu-icons {
       display: inline-block;
-      float: right; }
+      float: right;
+      margin-top: 7px; }
       .header .header-bottom .bottom-menu .menu-icons ul {
         list-style: none; }
         .header .header-bottom .bottom-menu .menu-icons ul li {
@@ -815,6 +835,8 @@ input[type=text] {
     text-align: right; }
     .coupons .trending-top .top-content p {
       text-transform: uppercase; }
+  .coupons .trending-bottom .content-image img {
+    width: 100%; }
   .coupons .trending-bottom .content-text {
     padding: 10px 35px !important;
     border-top: 2px dashed black;
@@ -883,6 +905,8 @@ input[type=text] {
 
 .latest-blog {
   background-image: none; }
+  .latest-blog .trending-bottom .content-image img {
+    width: 100%; }
   .latest-blog .trending-bottom .content-text {
     padding: 10px 15px !important; }
     .latest-blog .trending-bottom .content-text .text-upper {
@@ -1036,15 +1060,14 @@ input[type=text] {
       display: block;
       padding-left: 0px;
       margin-top: 10px; } }
-._deals-grid .deals {
-  background-image: url("../img/category.jpg");
+._grid .grid {
+  background-image: url("../img/breadcrumb.jpg");
   background-size: cover;
   opacity: 0.8;
   width: 100%;
   position: relative;
-  float: left;
   color: #fff; }
-  ._deals-grid .deals .overlay {
+  ._grid .grid .overlay {
     position: absolute;
     content: "";
     top: 0;
@@ -1053,9 +1076,9 @@ input[type=text] {
     left: 0;
     background-color: #000;
     opacity: 0.8; }
-  ._deals-grid .deals .deals-text {
+  ._grid .grid .grid-text {
     text-transform: uppercase; }
-    ._deals-grid .deals .deals-text h3 {
+    ._grid .grid .grid-text h3 {
       color: #99d038;
       position: relative;
       margin: 0px;
@@ -1064,17 +1087,332 @@ input[type=text] {
       font-family: 'Montserrat', sans-serif;
       text-transform: uppercase;
       font-size: 24px; }
-    ._deals-grid .deals .deals-text ul {
+    ._grid .grid .grid-text ul {
       padding: 0;
       margin: 0;
       font-size: 14px; }
-      ._deals-grid .deals .deals-text ul li {
+      ._grid .grid .grid-text ul li {
         display: inline-block; }
-        ._deals-grid .deals .deals-text ul li a {
+        ._grid .grid .grid-text ul li a {
           color: inherit; }
-        ._deals-grid .deals .deals-text ul li ::before {
-          padding: 0 5px;
-          color: #fff;
-          content: "/\00a0"; }
+      ._grid .grid .grid-text ul span {
+        padding: 0 5px;
+        color: #fff;
+        font-size: 17px; }
+
+.deals-content .awesome {
+  width: 100%;
+  position: relative;
+  float: left;
+  background-color: #fff;
+  padding: 30px 15px; }
+  .deals-content .awesome .text h3 {
+    text-transform: capitalize; }
+    .deals-content .awesome .text h3 a {
+      color: inherit; }
+  .deals-content .awesome .text p {
+    color: #777777; }
+  .deals-content .awesome .stars ul.stars {
+    padding-left: 0px !important; }
+  .deals-content .awesome .price ul {
+    padding-left: 0px; }
+    .deals-content .awesome .price ul li {
+      display: inline-block;
+      padding-right: 13px; }
+      .deals-content .awesome .price ul li h4 {
+        text-transform: capitalize;
+        font-size: 18px;
+        color: #262626; }
+        .deals-content .awesome .price ul li h4 a {
+          color: inherit; }
+      .deals-content .awesome .price ul li p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        line-height: 1.6em;
+        color: #777777; }
+.deals-content .slider-text h4 {
+  position: relative;
+  margin-bottom: 0px;
+  background: none;
+  line-height: 1.6em;
+  font-family: 'Montserrat', sans-serif;
+  color: #262626;
+  text-transform: uppercase; }
+.deals-content .slider-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.6em;
+  color: #777777; }
+.deals-content .ask-btn a {
+  background-color: #99d038;
+  position: relative;
+  border-radius: 50px;
+  padding: 10px 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase; }
+.deals-content .tittle {
+  position: relative;
+  background: none;
+  line-height: 1.6em;
+  font-family: 'Montserrat', sans-serif;
+  color: #262626; }
+
+.coupon-grid {
+  background-image: none !important; }
+
+.coupon-content .search {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 25px; }
+  .coupon-content .search .search-input {
+    position: relative; }
+    .coupon-content .search .search-input input {
+      background-color: #f2f2f2;
+      border: none;
+      padding: 0 20px;
+      border: 0;
+      display: inline-block;
+      width: 100%;
+      outline: none;
+      height: 40px;
+      font-size: 13px;
+      text-transform: capitalize; }
+    .coupon-content .search .search-input button {
+      background-color: #f2f2f2 !important;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      line-height: 1em;
+      background-color: #fff;
+      border: none;
+      padding: 0px 20px;
+      outline: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 500; }
+      .coupon-content .search .search-input button a {
+        color: inherit; }
+.coupon-content .blog {
+  width: 100%;
+  position: relative;
+  float: left; }
+  .coupon-content .blog .slider-blog img {
+    width: 100%; }
+.coupon-content .blog-text {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  padding: 15px;
+  float: left; }
+  .coupon-content .blog-text p {
+    font-size: 12px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6em;
+    color: #777777;
+    text-transform: capitalize; }
+.coupon-content .leatest-tweet {
+  width: 100%;
+  position: relative;
+  float: left;
+  background-color: #fff;
+  padding: 20px 15px; }
+  .coupon-content .leatest-tweet h4 {
+    text-transform: capitalize;
+    position: relative;
+    background: none;
+    line-height: 1.6em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px; }
+    .coupon-content .leatest-tweet h4 a {
+      color: #99d038 !important; }
+  .coupon-content .leatest-tweet h5 {
+    text-transform: capitalize;
+    position: relative;
+    background: none;
+    line-height: 1.6em;
+    font-family: 'Montserrat', sans-serif;
+    color: #262626;
+    font-size: 14px; }
+    .coupon-content .leatest-tweet h5 i {
+      color: #99d038; }
+  .coupon-content .leatest-tweet p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: #777777;
+    margin: 0px; }
+  .coupon-content .leatest-tweet span {
+    color: #99d038;
+    font-size: 14px; }
+.coupon-content .tending-offers {
+  width: 100%;
+  position: relative;
+  float: left;
+  background-color: #fff;
+  padding: 20px 15px; }
+  .coupon-content .tending-offers h4 {
+    font-size: 18px;
+    position: relative;
+    background: none;
+    line-height: 1.6em;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize; }
+    .coupon-content .tending-offers h4 a {
+      color: #99d038; }
+  .coupon-content .tending-offers .tending .tending-image img {
+    width: 100%; }
+  .coupon-content .tending-offers .tending .tending-text h5 {
+    font-size: 12px !important;
+    text-transform: capitalize; }
+    .coupon-content .tending-offers .tending .tending-text h5 a {
+      color: inherit; }
+  .coupon-content .tending-offers .tending .tending-text .green a {
+    color: #99d038;
+    border-bottom: 1px solid; }
+.coupon-content .tags {
+  width: 100%;
+  position: relative;
+  float: left;
+  background-color: #fff;
+  padding: 20px 15px; }
+  .coupon-content .tags h4 {
+    text-transform: capitalize;
+    font-size: 18px;
+    position: relative;
+    background: none;
+    line-height: 1.6em;
+    font-family: 'Montserrat', sans-serif; }
+    .coupon-content .tags h4 a {
+      color: #99d038; }
+  .coupon-content .tags ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .coupon-content .tags ul li {
+      display: inline-block;
+      margin-bottom: 10px !important; }
+      .coupon-content .tags ul li a {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.8em;
+        background-color: #f2f2f2;
+        color: #000;
+        padding: 10px 19px;
+        font-size: 12px;
+        text-transform: capitalize;
+        transition: all 0.45s ease-in-out; }
+        .coupon-content .tags ul li a:hover {
+          background-color: #99d038;
+          color: #fff; }
+.coupon-content .coupon-logo {
+  width: 100%;
+  position: relative;
+  float: left; }
+  .coupon-content .coupon-logo img {
+    width: 100%; }
+.coupon-content .tittle {
+  font-size: 24px;
+  line-height: 1.6em;
+  font-family: 'Montserrat', sans-serif;
+  color: #262626;
+  text-transform: uppercase; }
+.coupon-content .form input {
+  background-color: #f5f5f5;
+  padding: 0 20px;
+  border: 0;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  outline: none;
+  height: 40px;
+  font-size: 13px;
+  text-transform: capitalize; }
+.coupon-content .form textarea {
+  background-color: #f5f5f5;
+  padding: 0 20px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  outline: none;
+  font-size: 14px;
+  text-transform: capitalize;
+  resize: none; }
+.coupon-content .form .subcribe-btn button {
+  background-color: #99d038;
+  color: #fff;
+  font-size: inherit;
+  text-transform: capitalize;
+  border-radius: 50px;
+  padding: 5px 30px;
+  border: 0; }
+
+.blog-details-text {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  padding: 30px; }
+  .blog-details-text h4 {
+    text-transform: capitalize;
+    line-height: 1.6em;
+    font-family: 'Montserrat', sans-serif;
+    color: #262626;
+    font-size: 18px; }
+    .blog-details-text h4:hover {
+      color: #99d038;
+      transition: all 0.45s ease-in-out; }
+  .blog-details-text ul {
+    padding-left: 0; }
+    .blog-details-text ul li {
+      display: inline-block;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #777777; }
+      .blog-details-text ul li a {
+        color: inherit; }
+      .blog-details-text ul li:hover {
+        color: #99d038;
+        transition: all 0.45s ease-in-out; }
+  .blog-details-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: #777777; }
+
+.alone-text {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  padding: 30px;
+  border-left: 2px solid #99d038; }
+  .alone-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: #777777; }
+
+.sosial h3 {
+  text-transform: capitalize;
+  line-height: 1.6em;
+  font-family: 'Montserrat', sans-serif;
+  color: #262626;
+  font-size: 24px; }
+.sosial ul {
+  padding-left: 0px; }
+  .sosial ul li {
+    color: #99d038;
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px; }
+    .sosial ul li a {
+      color: inherit; }
 
 /*# sourceMappingURL=index.css.map */
