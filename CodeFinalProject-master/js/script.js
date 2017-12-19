@@ -140,10 +140,32 @@ $('.slider-blog .owl-carousel').owlCarousel({
 
  
 
-    
+var a = 1;
 
-    $( ".owl-prev").html('<i class="fa fa-arrow-left"></i>');
-    $( ".owl-next").html('<i class="fa fa-arrow-right"></i>');
+
+    $(".product-count .minus").click(function () {
+
+        if ($(".product-count input").val() > 0) {
+            a = a - 1;
+            $(this).closest(".product-count ").find("input").val(a);
+        }
+    })
+
+    $(".product-count .plus").click(function () {
+        //console.log($(".product-count .plus"))
+        //console.log($(".product-count input").val())
+        
+        a = a + 1;
+        //$(this).siblings('input')
+        $(this).closest(".product-count ").find("input").val(a);
+        //$(".product-count input").val(a);
+    })
+
+
+
+    $(".owl-prev").html('<i class="fa fa-arrow-left"></i>');
+    $(".owl-next").html('<i class="fa fa-arrow-right"></i>');
+
 
 
 });

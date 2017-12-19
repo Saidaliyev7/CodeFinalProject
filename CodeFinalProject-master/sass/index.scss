@@ -5,10 +5,12 @@ body {
     background-color: #f2f2f2 !important;
     line-height: 1.8em;
 }
+
 .navbar {
     display: none;
 }
-.owl-next{
+
+.owl-next {
     position: absolute;
     background-color: #fff;
     border-radius: 50px;
@@ -23,7 +25,8 @@ body {
         transition: 0.4s ease;
     }
 }
-.owl-prev{
+
+.owl-prev {
     position: absolute;
     content: "";
     color: #777777;
@@ -39,6 +42,7 @@ body {
         transition: 0.4s ease;
     }
 }
+
 .get-code-button {
     a {
         text-decoration: none;
@@ -47,6 +51,7 @@ body {
         border-radius: 50px;
         font-size: 14px;
         font-weight: bold;
+        background-color: white;
         overflow: hidden;
         display: inline-block;
         text-align: center;
@@ -90,24 +95,126 @@ body {
         }
         &:hover {
             span {
-               transform: translateX(-64px) ;
+                transform: translateX(-64px);
                 color: white;
                 background-color: $primarycolor;
-              &::after {
-                border-bottom: 32px solid $primarycolor;
-              }
+                &::after {
+                    border-bottom: 32px solid $primarycolor;
+                }
+            }
+        }
+    }
+}
+
+.lami-sections {
+    .slider {
+        .center {
+            .slider-carousel {
+                .slider-carousel-overlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    opacity: 0;
+                    z-index: 0;
+                }
+                .text {
+                    display: block;
+                }
+            }
+        }
+        .owl-nav {
+            display: block !important;
+            .owl-next{
+                content: "";
+                top: 40%;
+                right: 10%;
+            }
+        .owl-prev{
+                content: "";
+                top: 40%;
+                left: 10%;
+           
+            }
+        }
+        .owl-next {
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50px;
+            padding: 7px 12px;
+            width: 40px;
+            color: #777777;
+            height: 40px;
+            transition: 0.4s ease;
+            &:hover {
+                background-color: $primarycolor;
+                color: white;
+                transition: 0.4s ease;
+            }
+        }
+        
+        .owl-prev {
+            position: absolute;
+            content: "";
+            color: #777777;
+            background-color: #fff;
+            border-radius: 50px;
+            padding: 7px 12px;
+            width: 40px;
+            height: 40px;
+            transition: 0.4s ease;
+            &:hover {
+                background-color: $primarycolor;
+                color: white;
+                transition: 0.4s ease;
+            }
+        }
+        
+    }
+}
+.google-map {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+}
+.checkout {
+    float: right;
+    margin-top: 50px;
+    a {
+        text-transform: uppercase;
+        border-radius: 50px;
+        padding: 10px 40px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: $primarycolor;
+    }
+}
+
+textarea {
+    overflow: hidden;
+}
+.col-padding-5px {
+    padding: 0px 5px;
+}
+@media screen and (max-width:991px) {
+    .owl-nav {
+        display: none !important;
+    }
+}
+@media screen and (max-width:991px) {
+    .slider {
+        .owl-nav {
+            display: none !important;
+            .owl-prev {
+                display: none !important;
+            }
+            .owl-next {
+                display: none !important;
             }
         }
     }
    
-}
-
-@media screen and (max-width:991px) {
-
-.owl-nav {
-    display: none !important;
-}
-
 }
 
 @import 'lami';
@@ -122,3 +229,7 @@ body {
 @import 'coupon-grid';
 @import 'coupon-details';
 @import 'blog-details';
+@import 'wishlist';
+@import 'shopcart';
+@import 'contact';
+@import 'category';

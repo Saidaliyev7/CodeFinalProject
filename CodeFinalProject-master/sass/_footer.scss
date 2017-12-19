@@ -36,7 +36,7 @@
             }
             a {
                 color: $primarycolor;
-                padding: 8px 30px;
+                padding: 6px 30px;
                 border-bottom-right-radius: 20px;
                 border-top-right-radius: 20px;
                 border-right: 1px solid white;
@@ -82,6 +82,11 @@
             color: #b7b7b7;
             a{
                 color: #b7b7b7;
+                transition: 0.4s ease;
+                &:hover {
+                    transition: 0.4s ease;
+                    color: $primarycolor;
+                }
                 
             }
             img{
@@ -163,7 +168,33 @@
     }
     
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 991px){
+    .footer{
+        .footer-top {
+            text-align: center;
+            .top-links {
+                ul {
+                    padding-left: 0px;
+                    margin-top: 19px;
+                }
+            }
+        }
+        .footer-bottom{
+            h4{
+                font-size: 13px;
+            }
+        }
+    }
     
+  }
+@media screen and (max-width: 767px){
+ 
+    .footer{
+        .footer-bottom{
+            h4{
+                font-size: 13px;
+            }
+        }
+    }
     
 }

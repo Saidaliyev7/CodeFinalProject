@@ -40,6 +40,7 @@
             float: right;
             position: relative;
             ul {
+                padding-left: 0px;
                 margin: 0px;
                 list-style: none;
                 li {
@@ -68,7 +69,7 @@
                 width: 2px;
                 height: 20px;
                 background-color: white;
-                left: 106px;
+                left: 68px;
                 top: 10%;
             }
         }
@@ -79,12 +80,10 @@
             padding: 20px 0px;
             .menu-icon {
                 display: inline-block;
-                
             }
             .menu-navbar {
                 float: right;
                 display: inline-block;
-                margin-top: 7px;
                 ul {
                     padding: 0px;
                     margin: 0px;
@@ -111,7 +110,6 @@
             .menu-icons {
                 display: inline-block;
                 float: right;
-                margin-top: 7px;
                 ul {
                     list-style: none;
                     li {
@@ -149,5 +147,14 @@
         float: right;
         display: inline-block;
     }
-    
+}
+
+@media screen and (max-width:768px) {
+  .header-top {
+      text-align: center;
+      .top-user {
+          float: none !important;
+       margin-top: 20px;
+      }
+  }
 }

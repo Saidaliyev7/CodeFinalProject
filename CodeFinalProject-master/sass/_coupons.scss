@@ -12,15 +12,9 @@
         }
     }
     .trending-bottom {
-        .content-image{
-            img{
-                width: 100%;
-            }
-        }
-        
         .content-text {
             padding: 10px 35px !important;
-            border-top:2px dashed black;
+            border-top: 2px dashed black;
             position: relative;
             .text-scissors {
                 position: absolute;
@@ -30,54 +24,50 @@
                 width: 100%;
                 top: -16px;
                 left: 0%;
+                transition: 0.4s ease;
                 &:hover {
-                       
                     transition: 0.4s ease;
                     .img1 img {
-                        transition: 0.4s ease;
-                        left: 70%;
-                      transform: rotateZ(9deg);
-                      
+                        
+                        animation: mymove 1.5s 1;
                     }
+                   
                     .img2 img {
-                      left: 70%;
-                        transition: 0.4s ease;
-                        transform: rotateZ(-9deg);
+                        animation: mymov 1.5s 1;
                     }
                 }
                 .img1 img {
                     transition: 0.4s ease;
                     content: "";
                     position: absolute;
-                    width: 60px;
+                    width: 40px;
                     height: 43%;
                     top: 27%;
-                    left: 40%;
+                    left: 10%;
                 }
                 .img2 img {
                     transition: 0.4s ease;
                     content: "";
                     position: absolute;
-                    width: 60px;
+                    width: 40px;
                     height: 43%;
                     top: 25%;
-                    left: 40%;
+                    left: 10%;
                 }
             }
-            .text-upper{
+            .text-upper {
                 text-align: left !important;
-                a { 
+                a {
                     transition: 0.4s ease;
-                    &:hover{
+                    &:hover {
                         transition: 0.4s ease;
                         color: $primarycolor;
                     }
                 }
-                
             }
             .text-store {
                 p {
-                    font-size: 19px ;
+                    font-size: 19px;
                     span {
                         opacity: 0.8;
                         font-size: 16px;
@@ -106,5 +96,120 @@
                 left: 250px;
             }
         }
+    }
+}
+
+@keyframes mymove {
+    0% {
+        transition: 0.4s ease;
+        left: 10%;
+        transform: rotateZ(0deg);
+    }
+    10% {
+        transition: 0.4s ease;
+        left: 17%;
+        transform: rotateZ(9deg);
+    }
+    20% {
+        transition: 0.4s ease;
+        left: 24%;
+        transform: rotateZ(0deg);
+    }
+    30% {
+        transition: 0.4s ease;
+        left: 31%;
+        transform: rotateZ(9deg);
+    }
+    40% {
+        transition: 0.4s ease;
+        left: 40%;
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transition: 0.4s ease;
+        left: 47%;
+        transform: rotateZ(9deg);
+    }
+    60% {
+        transition: 0.4s ease;
+        left: 54%;
+        transform: rotateZ(0deg);
+    }
+    70% {
+        transition: 0.4s ease;
+        left: 61%;
+        transform: rotateZ(9deg);
+    }
+    80% {
+        transition: 0.4s ease;
+        left: 68%;
+        transform: rotateZ(0deg);
+    }
+    90% {
+        transition: 0.4s ease;
+        left: 73%;
+        transform: rotateZ(9deg);
+    }
+    100% {
+        transition: 0.4s ease;
+        left: 80%;
+        transform: rotateZ(0deg);
+    }
+}
+@keyframes mymov {
+    0% {
+        transition: 0.4s ease;
+        left: 10%;
+        transform: rotateZ(0deg);
+    }
+    10% {
+        transition: 0.4s ease;
+        left: 17%;
+        transform: rotateZ(-9deg);
+    }
+    20% {
+        transition: 0.4s ease;
+        left: 24%;
+        transform: rotateZ(0deg);
+    }
+    30% {
+        transition: 0.4s ease;
+        left: 31%;
+        transform: rotateZ(-9deg);
+    }
+    40% {
+        transition: 0.4s ease;
+        left: 40%;
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transition: 0.4s ease;
+        left: 47%;
+        transform: rotateZ(-9deg);
+    }
+    60% {
+        transition: 0.4s ease;
+        left: 54%;
+        transform: rotateZ(0deg);
+    }
+    70% {
+        transition: 0.4s ease;
+        left: 61%;
+        transform: rotateZ(-9deg);
+    }
+    80% {
+        transition: 0.4s ease;
+        left: 68%;
+        transform: rotateZ(0deg);
+    }
+    90% {
+        transition: 0.4s ease;
+        left: 73%;
+        transform: rotateZ(-9deg);
+    }
+    100% {
+        transition: 0.4s ease;
+        left: 80%;
+        transform: rotateZ(0deg);
     }
 }
